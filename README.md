@@ -313,7 +313,7 @@ Exploring characteristics of your data is a critical step in any data science pr
 One of the first steps in exploring your data could be understanding the distribution of various features. Histograms, box plots, and violin plots are commonly used for this purpose.
 
 ##### Histogram
-Histogram: A histogram shows the frequency of different values in a dataset. In seaborn, you can use sns.histplot() to create histograms.
+Histogram: A histogram shows the frequency of different values in a dataset. In seaborn, you can use `sns.histplot()` to create histograms.
 ```python
 import seaborn as sns
 import pandas as pd
@@ -324,14 +324,14 @@ sns.histplot(data)
 ```
 
 ##### Box plot
-A box plot is used to depict groups of numerical data through their quartiles. It can give you a better understanding of the spread and skewness of your data. Outliers can also be spotted using box plots. Seaborn's sns.boxplot() can be used to create these.
+A box plot is used to depict groups of numerical data through their quartiles. It can give you a better understanding of the spread and skewness of your data. Outliers can also be spotted using box plots. Seaborn's `sns.boxplot()` can be used to create these.
 ```python
 data = pd.DataFrame(np.random.rand(50, 4), columns=['A', 'B', 'C', 'D'])
 sns.boxplot(data=data)
 ```
 
 ##### Violin plot
-A violin plot combines the benefits of the previous two plots and simplifies them. It shows the distribution of quantitative data across several levels of one (or more) categorical variables. Use sns.violinplot() to create violin plots.
+A violin plot combines the benefits of the previous two plots and simplifies them. It shows the distribution of quantitative data across several levels of one (or more) categorical variables. Use `sns.violinplot()` to create violin plots.
 ```python
 tips = sns.load_dataset("tips")
 sns.violinplot(x=tips["total_bill"])
@@ -341,7 +341,7 @@ sns.violinplot(x=tips["total_bill"])
 If your data has multiple features, it's often useful to understand how these features relate to each other. Scatter plots, line plots, and correlation heatmaps can be useful here.
 
 ##### Scatter plot
-Scatter plots can help visualize the relationship between two numerical variables. In seaborn, you can use sns.scatterplot() to create scatter plots.
+Scatter plots can help visualize the relationship between two numerical variables. In seaborn, you can use `sns.scatterplot()` to create scatter plots.
 ```python
 iris = sns.load_dataset("iris")
 sns.scatterplot(x='sepal_length', y='sepal_width', data=iris)
@@ -395,7 +395,7 @@ print('Correlation:\n', correlation)
 ```
 
 ##### T-tests
-These are used to determine if there is a significant difference between the means of two groups. In Python, you can use the scipy.stats.ttest_ind() function to conduct a t-test.
+These are used to determine if there is a significant difference between the means of two groups. In Python, you can use the `scipy.stats.ttest_ind()` function to conduct a t-test.
 ```python
 import numpy as np
 from scipy import stats
@@ -414,7 +414,7 @@ print("p-value: ", p_val)
 ```
 
 ##### Analysis of Variance (ANOVA): 
-This is used to analyze the difference among group means in a sample. In Python, you can use the scipy.stats.f_oneway() function for ANOVA.
+This is used to analyze the difference among group means in a sample. In Python, you can use the `scipy.stats.f_oneway()` function for ANOVA.
 ```python
 # Perform one-way ANOVA
 F_stat, p_val = stats.f_oneway(group1, group2, group3)
@@ -451,7 +451,7 @@ print('Spearmans correlation: %.3f' % correlation)
 ```
 
 ##### Mann-Whitney U Test
-It is used to compare differences between two independent data samples. In Python, you can use the scipy.stats.mannwhitneyu() function for this test.
+It is used to compare differences between two independent data samples. In Python, you can use the `scipy.stats.mannwhitneyu()` function for this test.
 ```python
 # Perform Mann-Whitney U Test on group1 and group2
 u_stat, p_val = stats.mannwhitneyu(group1, group2)
