@@ -1,5 +1,12 @@
 # The Basics of Python for Data Science
 
+# Table of Contents
+1. [The Basics of Python](#the-basics-of-python)
+2. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+4. [Basic Machine Learning](#basic-machine-learning)
+5. [Advanced Machine Learning](#advanced-machine-learning)
+
 ## The Basics of Python
 
 ### Data structures
@@ -157,7 +164,7 @@ print(df.loc[0])
 
 <hr>
 
-## Data Cleaning and Pre-processing
+## Data Cleaning and Preprocessing
 Let's delve into data cleaning and preprocessing, which are crucial steps in any data science project. We will primarily use the pandas library for these tasks.
 
 ### Missing values
